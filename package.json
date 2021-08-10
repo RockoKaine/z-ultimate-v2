@@ -1,0 +1,14 @@
+{
+  "name": "z-ultimate",
+  "version": "1.0.0",
+  "description": "z-ultimate redesign rocko kaine flavor",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w incs/styles/sass/main.scss incs/styles/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.37.5"
+  }
+}

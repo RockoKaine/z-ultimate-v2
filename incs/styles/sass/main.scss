@@ -1,0 +1,166 @@
+$primary: #da0037;
+$yellow: #F0D43A;
+$black: #171717;
+$gray: #444444;
+$off-white: #ededed;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $yellow;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    // background: black;
+    font-size: 16px;
+    color:$black;
+}
+
+.container {
+    padding: 26px;
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    background: $yellow;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    color: $primary;
+    transition: all 0.5s ease;
+    &:hover {
+        padding: 5px 50px; 
+        color:$yellow;
+        background: $primary;
+    }
+}
+
+#primary-section {
+    p {
+        padding: 15px;
+    }
+}
+
+#header-img{
+    background: black url('../../imgs/leslie-jones-urBiLDuUhMU-unsplash.jpg');
+    background-repeat:no-repeat;
+    margin: auto;
+    padding: 26px;
+    width: 100%;
+    height: auto;
+    background-size: 100% auto;
+    text-align: center;
+    // border-bottom: solid 2px white;
+    p{
+
+        color:$off-white; 
+        font-size: 1.8rem;
+        margin:26px auto;
+    }
+    img {
+        width: 30%;
+        margin: 20px;
+    }
+    h5{margin-top: 15px;}
+}
+
+#main-content {
+    width: 85%;
+    height:100%;
+    float: right;
+
+    
+    
+}
+#main-nav{ 
+    color:$primary;
+    position: fixed;
+    float: left;
+    height: 100vh;
+    width: 15%;
+    background: black;
+    padding-top: 16px;
+    border-right: solid 6px $yellow;
+
+    nav {
+        ul{
+            list-style: none;
+            margin-top: 16px;
+            li {
+                padding: 3px 8px;
+                margin: 5px 0;
+                width: 100%;
+                transition: all 0.5s ease;
+                &:hover {
+                    background: $primary;
+                }
+                &:hover > a{
+                    color: $off-white;
+
+                }
+            }
+        }
+        a{
+            color:$primary;
+            text-decoration: none;
+            font-size: 1.25rem;
+            transition: all 0.5s ease;
+            
+        }
+    }
+
+    #nav-logo {
+        background: url('../../imgs/z-ultimate-logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 20%;
+    }
+}
+
+#information {
+    width: 100%;
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .info-card {
+        height: 400px;
+        width: 250px;
+        background: $gray;
+        border: solid 2px black;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+        .card-title {
+            width: 100%;
+            height: 50px;
+            color: $off-white;
+            font-size: 1.75rem;
+            text-align: center;
+        }
+        .card-img {
+            width: 100%;
+            height: auto;
+        }
+        .card-main {
+            color: $off-white;
+        }
+        .card-btn{
+            text-align: center;
+        }
+    }
+}

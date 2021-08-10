@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #F0D43A;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  color: #171717;
+}
+
+.container {
+  padding: 26px;
+  height: 100%;
+  width: 100%;
+}
+
+.btn {
+  background: #F0D43A;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  color: #da0037;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  padding: 5px 50px;
+  color: #F0D43A;
+  background: #da0037;
+}
+
+#primary-section p {
+  padding: 15px;
+}
+
+#header-img {
+  background: black url("../../imgs/leslie-jones-urBiLDuUhMU-unsplash.jpg");
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 26px;
+  width: 100%;
+  height: auto;
+  background-size: 100% auto;
+  text-align: center;
+}
+
+#header-img p {
+  color: #ededed;
+  font-size: 1.8rem;
+  margin: 26px auto;
+}
+
+#header-img img {
+  width: 30%;
+  margin: 20px;
+}
+
+#header-img h5 {
+  margin-top: 15px;
+}
+
+#main-content {
+  width: 85%;
+  height: 100%;
+  float: right;
+}
+
+#main-nav {
+  color: #da0037;
+  position: fixed;
+  float: left;
+  height: 100vh;
+  width: 15%;
+  background: black;
+  padding-top: 16px;
+  border-right: solid 6px #F0D43A;
+}
+
+#main-nav nav ul {
+  list-style: none;
+  margin-top: 16px;
+}
+
+#main-nav nav ul li {
+  padding: 3px 8px;
+  margin: 5px 0;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#main-nav nav ul li:hover {
+  background: #da0037;
+}
+
+#main-nav nav ul li:hover > a {
+  color: #ededed;
+}
+
+#main-nav nav a {
+  color: #da0037;
+  text-decoration: none;
+  font-size: 1.25rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#main-nav #nav-logo {
+  background: url("../../imgs/z-ultimate-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 20%;
+}
+
+#information {
+  width: 100%;
+}
+
+#information .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#information .info-card {
+  height: 400px;
+  width: 250px;
+  background: #444444;
+  border: solid 2px black;
+  border-radius: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+#information .info-card .card-title {
+  width: 100%;
+  height: 50px;
+  color: #ededed;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+#information .info-card .card-img {
+  width: 100%;
+  height: auto;
+}
+
+#information .info-card .card-main {
+  color: #ededed;
+}
+
+#information .info-card .card-btn {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
