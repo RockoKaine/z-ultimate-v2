@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Maitree:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +7,12 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo Black', sans-serif;
   color: #F0D43A;
+}
+
+p {
+  font-family: 'Maitree', serif;
 }
 
 html, body {
@@ -49,7 +55,7 @@ html, body {
   margin: auto;
   padding: 26px;
   width: 100%;
-  height: auto;
+  height: 130vh;
   background-size: 100% auto;
   text-align: center;
 }
@@ -124,11 +130,11 @@ html, body {
   height: 20%;
 }
 
-#information {
+.information {
   width: 100%;
 }
 
-#information .container {
+.information .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,12 +143,12 @@ html, body {
           justify-content: space-evenly;
 }
 
-#information .info-card {
-  height: 400px;
+.information .info-card {
+  height: auto;
   width: 250px;
-  background: #444444;
-  border: solid 2px black;
-  border-radius: 20px 20px 0 0;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,27 +159,97 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
+  padding: 6px;
 }
 
-#information .info-card .card-title {
+.information .info-card .card-title {
   width: 100%;
   height: 50px;
+  border-radius: 10px 10px 0 0;
+  background: #F0D43A;
   color: #ededed;
   font-size: 1.75rem;
   text-align: center;
 }
 
-#information .info-card .card-img {
+.information .info-card .card-title h2 {
+  color: #ededed;
+  font-size: 1.5rem;
+}
+
+.information .info-card .card-img {
   width: 100%;
   height: auto;
 }
 
-#information .info-card .card-main {
-  color: #ededed;
+.information .info-card .card-main {
+  color: #171717;
+  font-size: 0.75rem;
+  padding: 6px;
 }
 
-#information .info-card .card-btn {
+.information .info-card .card-btn {
   text-align: center;
+  padding: 6px;
+}
+
+.animated-card {
+  height: 250px;
+  width: 250px;
+  background: url("../../imgs/karate-1665606_1280.jpg") no-repeat center;
+  background-size: auto 100%;
+  border-radius: 10px;
+  margin: 40px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+
+.animated-card .animated-card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 100%;
+  height: 13%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 5px 20px;
+  -webkit-box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.animated-card .animated-card-inner p {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.animated-card .animated-card-inner a {
+  text-align: center;
+}
+
+.animated-card .animated-card-inner h3 {
+  text-align: center;
+}
+
+.animated-card:hover > .animated-card-inner {
+  height: 85%;
+}
+
+#main-footer {
+  width: 100%;
+  height: 25vh;
+  background: #444444;
 }
 /*# sourceMappingURL=main.css.map */

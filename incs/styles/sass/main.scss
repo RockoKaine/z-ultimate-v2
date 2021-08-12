@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Maitree:wght@400;700&display=swap');
 $primary: #da0037;
 $yellow: #F0D43A;
 $black: #171717;
@@ -12,7 +13,11 @@ $off-white: #ededed;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Black', sans-serif;
     color: $yellow;
+}
+p {
+    font-family: 'Maitree', serif;
 }
 
 html, body {
@@ -56,7 +61,7 @@ html, body {
     margin: auto;
     padding: 26px;
     width: 100%;
-    height: auto;
+    height: 130vh;
     background-size: 100% auto;
     text-align: center;
     // border-bottom: solid 2px white;
@@ -128,39 +133,86 @@ html, body {
     }
 }
 
-#information {
+.information {
     width: 100%;
     .container {
         display: flex;
         justify-content: space-evenly;
     }
     .info-card {
-        height: 400px;
+        height: auto;
         width: 250px;
-        background: $gray;
-        border: solid 2px black;
-        border-radius: 20px 20px 0 0;
+        // background: $gray;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px;
+        padding: 6px;
         
         .card-title {
             width: 100%;
             height: 50px;
+            border-radius: 10px 10px 0 0;
+            background: $yellow;
             color: $off-white;
             font-size: 1.75rem;
             text-align: center;
+            h2{color:$off-white; font-size: 1.5rem;}
         }
         .card-img {
             width: 100%;
             height: auto;
         }
         .card-main {
-            color: $off-white;
+            color: $black;
+            font-size: 0.75rem;
+            padding: 6px;
         }
         .card-btn{
             text-align: center;
+            padding: 6px;
         }
     }
+}
+
+.animated-card {
+    height: 250px;
+    width: 250px;
+    background: url('../../imgs/karate-1665606_1280.jpg') no-repeat center;
+    background-size: auto 100%;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    position: relative;
+    
+    .animated-card-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 1s ease;
+        width: 100%;
+        height: 13%;
+        background: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        // overflow: hidden; makes text show on hove but hidden b4
+        position: absolute;
+        bottom:0;
+        color: white;
+        padding: 5px 20px;
+        box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.7);
+        p{ font-size: 0.75rem; line-height: 1rem;}
+        a{text-align: center;}
+        h3{text-align: center;}
+    }
+
+    &:hover > .animated-card-inner {
+        height: 85%;
+    }
+}
+
+#main-footer {
+    width: 100%;
+    height: 25vh;
+    background: $gray;
 }
